@@ -1,5 +1,5 @@
 # framer.module.ajax
-framer.module.fill is an Ajax module for Framer.
+framer.module.ajax is an Ajax module for Framer.
 
 ## License
 The MIT License (MIT)
