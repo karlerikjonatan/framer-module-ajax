@@ -34,10 +34,8 @@ createAvatar = (data) ->
 	avatar = new Layer(
 		height: 200
 		width: 200
-		image: data.image_urls.epic
+		image: data.image_urls.epic # data object is from our Ajax request
 	)
-	
-	avatar.center()
 ```
 ## License
 Copyright (c) 2015 Jonatan Pettersson
