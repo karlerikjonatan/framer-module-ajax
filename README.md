@@ -16,6 +16,31 @@ ajax = require "ajax"
 
 framer.module.ajax consists of the method ```get``` and requires the parameters ```url```, ```callback```.
 
+#### get
+``` coffeescript
+ajax.get(url, (response) -> callback(response))
+```
+The ```url``` and ```callback``` parameters defines the URL to request and the function to run (together with response object) on success.
+
+### Example
+``` coffeescript
+# Module
+ajax = require "ajax"
+
+# GET
+ajax.get("http://uifaces.com/api/v1/random", (response) -> createAvatar(response))
+
+# Avatar
+createAvatar = (data) ->
+	avatar = new Layer(
+		height: 200
+		width: 200
+		image: data.image_urls.epic
+	)
+	
+	avatar.center()
+```
+## License
 Copyright (c) 2015 Jonatan Pettersson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
