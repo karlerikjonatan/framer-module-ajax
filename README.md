@@ -34,7 +34,7 @@ createAvatar = (data) ->
 	avatar = new Layer(
 		height: 200
 		width: 200
-		image: data.image_urls.epic # data object is from our Ajax request
+		image: data.image_urls.epic
 	)
 ```
 ## License
