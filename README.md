@@ -19,6 +19,8 @@ ajax.get(url, (response) -> callback(response))
 ```
 The ```url``` and ```callback``` parameters defines the URL to request and the function to run (together with response object) on success.
 
+framer.module.ajax parses all responses as ```JSON```.
+
 ### Example
 ``` coffeescript
 # Module
