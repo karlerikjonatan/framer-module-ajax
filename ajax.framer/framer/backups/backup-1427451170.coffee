@@ -2,7 +2,7 @@
 ajax = require "ajax"
 
 # GET
-ajax.get("http://uifaces.com/api/v1/random", (response) -> if response.statuscreateAvatar(response))
+ajax.get("http://uifaces.com/api/v1/random", (response) -> createAvatar(response))
 
 # Avatar
 createAvatar = (data) ->
