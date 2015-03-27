@@ -4,6 +4,18 @@ framer.module.ajax is an Ajax module for Framer.
 ## License
 The MIT License (MIT)
 
+## Installation
+Add ```ajax.coffee``` to the /modules folder of your project.
+
+## Usage
+To include the module within your project, add the following:
+
+``` coffeescript
+ajax = require "ajax"
+```
+
+framer.module.ajax consists of the method ```get``` and requires the parameters ```url```, ```callback```.
+
 Copyright (c) 2015 Jonatan Pettersson
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
