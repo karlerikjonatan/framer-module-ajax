@@ -27,13 +27,13 @@ framer.module.ajax parses all responses as ```JSON```.
 ajax = require "ajax"
 
 # GET
-ajax.get("http://uifaces.com/api/v1/random", (response) -> createAvatar(response))
+ajax.get("https://randomuser.me/api/", (response) -> createAvatar(response))
 
 # Avatar
 createAvatar = (data) ->
 	avatar = new Layer(
 		height: 200
 		width: 200
-		image: data.image_urls.epic
+		image: data.results[0].user.picture.large
 	)
 ```
