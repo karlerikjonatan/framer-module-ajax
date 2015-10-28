@@ -2,14 +2,14 @@
 ajax = require "ajax"
 
 # GET
-ajax.get("https://randomuser.me/api/", (response) -> createAvatar(response))
+ajax.get("http://uifaces.com/api/v1/random", (response) -> createAvatar(response))
 
 # Avatar
 createAvatar = (data) ->
 	avatar = new Layer(
 		height: 200
 		width: 200
-		image: data.results[0].user.picture.large
+		image: data.image_urls.epic
 	)
 	
 	avatar.center()

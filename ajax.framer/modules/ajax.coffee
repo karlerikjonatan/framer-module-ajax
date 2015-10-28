@@ -12,4 +12,3 @@ exports.get = (url, callback) ->
         callback(JSON.parse({status: false}))
 
     request.send()
-
